@@ -8,7 +8,9 @@ Dane wejściowe: 15 zwycięstw (int), 8 remisów (int), 12 porażek (int)
 Dane wyjściowe: string (ile AFC Richmond ma punktów i czy są mistrzami czy nie)
 
 ```python
+wynik = int
 def mistrz_ted_lasso(zwyciestwo, remis, przegrana):
-    pass
-
+    wynik = 3 * zwyciestwo + 1 * remis + 0 * przegrana
+    return wynik
+mistrz_ted_lasso(15, 8, 12)
 ```
