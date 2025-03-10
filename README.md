@@ -9,8 +9,13 @@ Dane wyjściowe: string (ile AFC Richmond ma punktów i czy są mistrzami czy ni
 
 ```python
 wynik = int
+
 def mistrz_ted_lasso(zwyciestwo, remis, przegrana):
     wynik = 3 * zwyciestwo + 1 * remis + 0 * przegrana
     return wynik
 mistrz_ted_lasso(15, 8, 12)
+    if wynik >= 80:
+        print f'AFC Richmond są mistrzami. Mają {wynik} punktów'
+    else:
+        print f'AFC Richmond nie są mistrzami. Mają {wynik} punktów'
 ```
